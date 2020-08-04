@@ -106,7 +106,8 @@ class TwitchClient {
     try {
       playlist = await HlsPlaylistParser.create().parseString(uri, response.body);
     } on ParserException catch (e) {
-      throw e;
+      print(e);
+      return null;
     }
 
     // lower to higher
