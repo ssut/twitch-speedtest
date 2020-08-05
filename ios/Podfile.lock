@@ -1,0 +1,34 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_hls_parser (0.0.1):
+    - Flutter
+  - shared_preferences (0.0.1):
+    - Flutter
+  - url_launcher (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_hls_parser (from `.symlinks/plugins/flutter_hls_parser/ios`)
+  - shared_preferences (from `.symlinks/plugins/shared_preferences/ios`)
+  - url_launcher (from `.symlinks/plugins/url_launcher/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_hls_parser:
+    :path: ".symlinks/plugins/flutter_hls_parser/ios"
+  shared_preferences:
+    :path: ".symlinks/plugins/shared_preferences/ios"
+  url_launcher:
+    :path: ".symlinks/plugins/url_launcher/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_hls_parser: be41df963ec4f909fb5c318d483c4483556553e0
+  shared_preferences: af6bfa751691cdc24be3045c43ec037377ada40d
+  url_launcher: 6fef411d543ceb26efce54b05a0a40bfd74cbbef
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.9.3

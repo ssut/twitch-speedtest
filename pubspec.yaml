@@ -36,6 +36,12 @@ dependencies:
   provider: ^4.3.1
   flutter_spinkit: ^4.1.2
   progress_state_button: ^1.0.1
+  dio: ^3.0.9
+  basic_utils: ^2.6.0
+  flutter_dotenv: ^2.1.0
+  flutter_cupertino_settings: ^0.2.0
+  cupertino_progress_bar: ^0.1.0
+  pool: ^1.4.0
 
 dev_dependencies:
   flutter_test:
@@ -52,6 +58,7 @@ flutter:
   uses-material-design: true
 
   assets:
+    - .env
     - assets/translations/
   # To add assets to your application, add an assets section, like this:
   # assets:
