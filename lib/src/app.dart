@@ -33,6 +33,7 @@ class TwitchSpeedTestApp extends StatelessWidget {
         ChangeNotifierProvider<SettingsModel>(create: (_) => settings),
       ],
       child: CupertinoApp(
+        debugShowCheckedModeBanner: false,
         localizationsDelegates: context.localizationDelegates,
         supportedLocales: context.supportedLocales,
         locale: context.locale,
