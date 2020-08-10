@@ -42,6 +42,17 @@ dependencies:
   flutter_cupertino_settings: ^0.2.0
   cupertino_progress_bar: ^0.1.0
   pool: ^1.4.0
+  worker_manager: ^3.0.0
+  stream_channel: ^2.0.0
+  flutter_svg: ^0.18.0
+  firebase_core: ^0.4.0
+  firebase_analytics: ^5.0.16
+  shared_preferences: ^0.5.8
+  window_size:
+    git:
+      url: git://github.com/google/flutter-desktop-embedding.git
+      path: plugins/window_size
+      ref: master
 
 dev_dependencies:
   flutter_test:
@@ -56,6 +67,34 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  fonts:
+    - family: Gauge Mono
+      fonts:
+        - asset: assets/fonts/Gauge-Mono.ttf
+    - family: Noto Sans KR
+      fonts:
+        - asset: assets/fonts/ko/NotoSansKR-Thin.otf
+        - asset: assets/fonts/ko/NotoSansKR-Light.otf
+        - asset: assets/fonts/ko/NotoSansKR-Regular.otf
+        - asset: assets/fonts/ko/NotoSansKR-Medium.otf
+        - asset: assets/fonts/ko/NotoSansKR-Bold.otf
+        - asset: assets/fonts/ko/NotoSansKR-Black.otf
+    - family: Noto Sans JP
+      fonts:
+        - asset: assets/fonts/ja/NotoSansJP-Thin.otf
+        - asset: assets/fonts/ja/NotoSansJP-Light.otf
+        - asset: assets/fonts/ja/NotoSansJP-Regular.otf
+        - asset: assets/fonts/ja/NotoSansJP-Medium.otf
+        - asset: assets/fonts/ja/NotoSansJP-Bold.otf
+        - asset: assets/fonts/ja/NotoSansJP-Black.otf
+    - family: Hind
+      fonts:
+        - asset: assets/fonts/en/Hind-Light.ttf
+        - asset: assets/fonts/en/Hind-Regular.ttf
+        - asset: assets/fonts/en/Hind-Medium.ttf
+        - asset: assets/fonts/en/Hind-SemiBold.ttf
+        - asset: assets/fonts/en/Hind-Bold.ttf
 
   assets:
     - .env

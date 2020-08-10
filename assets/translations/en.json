@@ -1,0 +1,22 @@
+{
+  "tab:speedtest": "SpeedTest",
+  "tab:speedtest.title": "SpeedTest",
+  "tab:history": "History",
+  "tab:settings": "Settings",
+
+  "connecting": "Checking for connection.\nPlease wait just a bit!",
+  "speedtest.start": "Start",
+  "speedtest.loading": "Preparing",
+  "speedtest.failed": "Retry",
+  "speedtest.success": "Restart",
+  "speedtest.finishing": "Finishing the test.\nIt'll be done soon!",
+  "speedtest:title.latency": "Latency",
+  "speedtest:title.jitter": "Jitter",
+  "speedtest:title.stream": "Stream",
+  "network": "Network",
+  "mode": "Connection Mode",
+  "mode:multi": "Multiple",
+  "mode:single": "Single",
+  "mode:warning": "WARNING: Multiple stream mode(default, recommended) requires a lot more bandwidth.",
+  "testing-servers": "Discovered Twitch server(s)"
+}

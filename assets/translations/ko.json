@@ -1,0 +1,23 @@
+{
+
+  "tab:speedtest": "속도측정",
+  "tab:speedtest.title": "속도측정",
+  "tab:history": "측정기록",
+  "tab:settings": "설정",
+
+  "connecting": "인터넷 연결 상태를 확인하고 있어요.\n잠시만 기다려주세요!",
+  "speedtest.start": "테스트 시작",
+  "speedtest.loading": "준비 중",
+  "speedtest.failed": "재시도",
+  "speedtest.success": "다시 측정하기",
+  "speedtest.finishing": "테스트를 마치고 있어요.\n잠시만 기다려주세요!",
+  "speedtest:title.latency": "지연 시간",
+  "speedtest:title.jitter": "지터",
+  "speedtest:title.stream": "스트림",
+  "network": "네트워크",
+  "mode": "측정 모드",
+  "mode:multi": "다중 스트림",
+  "mode:single": "단일 스트림",
+  "mode:warning": "주의: 다중 스트림(권장) 모드는 더 많은 데이터를 사용합니다.",
+  "testing-servers": "연결된 트위치 스트리밍 서버 위치"
+}
