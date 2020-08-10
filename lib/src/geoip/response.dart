@@ -1,65 +1,137 @@
 // To parse this JSON data, do
 //
-//     final geoIpResponse = geoIpResponseFromJson(jsonString);
+//     final ipInfo = ipInfoFromJson(jsonString);
 
 import 'dart:convert';
 
-class GeoIpResponse {
-  GeoIpResponse({
+class IpInfo {
+  IpInfo({
     this.ip,
+    this.success,
+    this.type,
+    this.continent,
+    this.continentCode,
+    this.country,
     this.countryCode,
-    this.countryName,
-    this.regionCode,
-    this.regionName,
+    this.countryFlag,
+    this.countryCapital,
+    this.countryPhone,
+    this.countryNeighbours,
+    this.region,
     this.city,
-    this.zipCode,
-    this.timeZone,
     this.latitude,
     this.longitude,
-    this.metroCode,
+    this.asn,
+    this.org,
+    this.isp,
+    this.timezone,
+    this.timezoneName,
+    this.timezoneDstOffset,
+    this.timezoneGmtOffset,
+    this.timezoneGmt,
+    this.currency,
+    this.currencyCode,
+    this.currencySymbol,
+    this.currencyRates,
+    this.currencyPlural,
+    this.completedRequests,
   });
 
   final String ip;
+  final bool success;
+  final String type;
+  final String continent;
+  final String continentCode;
+  final String country;
   final String countryCode;
-  final String countryName;
-  final String regionCode;
-  final String regionName;
+  final String countryFlag;
+  final String countryCapital;
+  final String countryPhone;
+  final String countryNeighbours;
+  final String region;
   final String city;
-  final String zipCode;
-  final String timeZone;
-  final double latitude;
-  final double longitude;
-  final int metroCode;
+  final String latitude;
+  final String longitude;
+  final String asn;
+  final String org;
+  final String isp;
+  final String timezone;
+  final String timezoneName;
+  final String timezoneDstOffset;
+  final String timezoneGmtOffset;
+  final String timezoneGmt;
+  final String currency;
+  final String currencyCode;
+  final String currencySymbol;
+  final String currencyRates;
+  final String currencyPlural;
+  final int completedRequests;
 
-  factory GeoIpResponse.fromRawJson(String str) => GeoIpResponse.fromJson(json.decode(str));
+  factory IpInfo.fromRawJson(String str) => IpInfo.fromJson(json.decode(str));
 
   String toRawJson() => json.encode(toJson());
 
-  factory GeoIpResponse.fromJson(Map<String, dynamic> json) => GeoIpResponse(
+  factory IpInfo.fromJson(Map<String, dynamic> json) => IpInfo(
     ip: json["ip"],
+    success: json["success"],
+    type: json["type"],
+    continent: json["continent"],
+    continentCode: json["continent_code"],
+    country: json["country"],
     countryCode: json["country_code"],
-    countryName: json["country_name"],
-    regionCode: json["region_code"],
-    regionName: json["region_name"],
+    countryFlag: json["country_flag"],
+    countryCapital: json["country_capital"],
+    countryPhone: json["country_phone"],
+    countryNeighbours: json["country_neighbours"],
+    region: json["region"],
     city: json["city"],
-    zipCode: json["zip_code"],
-    timeZone: json["time_zone"],
-    latitude: json["latitude"].toDouble(),
-    longitude: json["longitude"].toDouble(),
-    metroCode: json["metro_code"],
+    latitude: json["latitude"],
+    longitude: json["longitude"],
+    asn: json["asn"],
+    org: json["org"],
+    isp: json["isp"],
+    timezone: json["timezone"],
+    timezoneName: json["timezone_name"],
+    timezoneDstOffset: json["timezone_dstOffset"],
+    timezoneGmtOffset: json["timezone_gmtOffset"],
+    timezoneGmt: json["timezone_gmt"],
+    currency: json["currency"],
+    currencyCode: json["currency_code"],
+    currencySymbol: json["currency_symbol"],
+    currencyRates: json["currency_rates"],
+    currencyPlural: json["currency_plural"],
+    completedRequests: json["completed_requests"],
   );
 
   Map<String, dynamic> toJson() => {
     "ip": ip,
+    "success": success,
+    "type": type,
+    "continent": continent,
+    "continent_code": continentCode,
+    "country": country,
     "country_code": countryCode,
-    "country_name": countryName,
-    "region_code": regionCode,
-    "region_name": regionName,
+    "country_flag": countryFlag,
+    "country_capital": countryCapital,
+    "country_phone": countryPhone,
+    "country_neighbours": countryNeighbours,
+    "region": region,
     "city": city,
-    "zip_code": zipCode,
-    "time_zone": timeZone,
     "latitude": latitude,
     "longitude": longitude,
-    "metro_code": metroCode,
+    "asn": asn,
+    "org": org,
+    "isp": isp,
+    "timezone": timezone,
+    "timezone_name": timezoneName,
+    "timezone_dstOffset": timezoneDstOffset,
+    "timezone_gmtOffset": timezoneGmtOffset,
+    "timezone_gmt": timezoneGmt,
+    "currency": currency,
+    "currency_code": currencyCode,
+    "currency_symbol": currencySymbol,
+    "currency_rates": currencyRates,
+    "currency_plural": currencyPlural,
+    "completed_requests": completedRequests,
   };
 }
