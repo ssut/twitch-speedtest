@@ -12,9 +12,6 @@ class Latency {
     ..badCertificateCallback = _certificateCheck);
 
   static Future<int> test(Uri uri) async {
-    final host = uri.host;
-    final port = uri.port;
-
     // look up dns first to measure more precise latency
     final record = await DnsUtils.lookupRecord(uri.host, RRecordType.A);
     final ip = record.single.data;
